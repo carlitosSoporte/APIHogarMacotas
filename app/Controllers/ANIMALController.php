@@ -17,6 +17,7 @@ class ANIMALController extends ResourceController{
         $id = $this->request->getPost('id');
         $nombre = $this->request->getPost('nombre');
         $edad = $this->request->getPost('edad');
+        $tipo = $this->request->getPost('tipo');
         $descripcion = $this->request->getPost('descripcion');
         $comida = $this->request->getPost('comida');
 
@@ -25,6 +26,7 @@ class ANIMALController extends ResourceController{
             'id'=>$id,
             'nombre'=>$nombre,
             'edad'=>$edad,
+            'tipo'=>$tipo,
             'descripcion'=>$descripcion,
             'comida'=>$comida
         );
@@ -51,6 +53,7 @@ class ANIMALController extends ResourceController{
             'nombre'=>$animalEditar['nombre'],
             'edad'=>$animalEditar['edad'],
             'descripcion'=>$animalEditar['descripcion'],
+            'tipo'=>$animalEditar['tipo'],
             'comida'=>$animalEditar['comida']
         );
 

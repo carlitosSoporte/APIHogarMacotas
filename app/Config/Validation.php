@@ -41,6 +41,7 @@ class Validation
 		'id'=>'required',
 		'nombre'=>'required',
 		'edad'=>'required',
+		'tipo'=>'required',
 		'descripcion'=>'required',
 		'comida'=>'required'
 	];
@@ -48,6 +49,7 @@ class Validation
 	public $animal = [
 		'nombre'=>'required',
 		'edad'=>'required',
+		'tipo'=>'required',
 		'descripcion'=>'required',
 		'comida'=>'required'
 	];
